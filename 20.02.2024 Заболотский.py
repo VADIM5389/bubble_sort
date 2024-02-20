@@ -18,6 +18,6 @@ def naive_search(text, pattern):
             indices.append(i)
     return indices
 
-text = input("ведте текст")
-pattern = input("Введте текст для поиска")
+text = input("Введите текст")
+pattern = input("Введите текст для поиска")
 print(naive_search(text, pattern))
