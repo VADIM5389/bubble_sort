@@ -12,3 +12,13 @@ sorted_arr = bubble_sort(arr)
 print("Отсортированный список:", sorted_arr)
 
 
+def naive_search(text, pattern):
+    indices = []
+    for i in range(len(text) - len(pattern) + 1):
+        if text[i: i + len(pattern)] == pattern:
+            indices.append(i)
+    return indices
+
+text = input("Введите текст")
+pattern = input("Введите текст для поиска")
+print(naive_search(text, pattern))
